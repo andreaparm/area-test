@@ -81,6 +81,9 @@
               perform vbx-msg
               move "C:\ECOGE\SCR"  to ext-scr-dir
            end-if
+      
+           move "Ho modificato questo programma in Git" to wb-msg
+           perform vbx-msg-info
 
            initialize util-senv
            move "S"                to senv-run-type
